@@ -1,5 +1,5 @@
-const {getNewZ} = require('./getNewZ');
-const {getNewXY} = require('./getNewXY');
+var {getNewZ} = require('./getNewZ');
+var {getNewXY} = require('./getNewXY');
 
 interface Params {
     instructions: string,
@@ -33,7 +33,7 @@ module.exports = {
                     z: currentZ
                 }
                 const newXY = getNewXY(gNXYParams);
-                coordinates.push({...newXY, z: currentZ});
+                coordinates.push(newXY);
                 currentX = newXY.x;
                 currentY = newXY.y; 
             //if L or R determine new heading

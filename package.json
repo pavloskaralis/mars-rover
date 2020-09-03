@@ -4,7 +4,7 @@
   "description": "TypeScript CLI to command 2 rovers on Mars.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "ts-node src/index.ts"
   },
   "keywords": [
@@ -15,8 +15,10 @@
   "author": "Pavlos Karalis",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.13",
     "@types/node": "^14.6.4",
     "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
   },

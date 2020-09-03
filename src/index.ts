@@ -4,11 +4,11 @@ const consola = require('consola');
 const clear = require('clear');
 const chalk = require('chalk');
 const figlet = require('figlet');
-const isValid = require('./validators');
 const questions = require('./questions');
-const {isInBounds} = require('./functions/isInBounds');
-const {plotPath} = require('./functions/plotPath');
-const {willCollide} = require('./functions/willCollide');
+var isValid = require('./validators');
+var {isInBounds} = require('./functions/isInBounds');
+var {plotPath} = require('./functions/plotPath');
+var {willCollide} = require('./functions/willCollide');
 
 //outputs
 type Coordinate = {
