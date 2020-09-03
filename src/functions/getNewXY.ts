@@ -4,13 +4,13 @@ interface Params {
     z: string
 }
 
-type Return = {
+type XYReturn = {
     x: number,
     y: number
 }
 
 module.exports = {
-    getNewXY: function (params: Params) : Return {
+    getNewXY: function (params: Params) : XYReturn {
         const {x,y,z} = params; 
         if(['E','W'].includes(z)){
             return z === 'E' ? {x: x + 1, y} : {x: x - 1, y}
