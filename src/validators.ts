@@ -7,5 +7,8 @@ module.exports = {
     },
     gridboundsInput: function (string: string) : boolean {
         return string.match(/^[1-9]+\s[1-9]+$/) ? true : false;
+    },
+    restartInput: function (string: string) : boolean {
+        return string.match(/^((yes)|(no))$/) ? true : false;
     }
 }

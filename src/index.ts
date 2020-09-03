@@ -194,13 +194,21 @@ function requestInstructionsB () {
         //store second output
         lastB = coordinatesB[coordinatesB.length - 1];
         //prompt final question
+        console.log(chalk.red(`Rover A Ending Positon: `) + `${lastA.x} ${lastA.y} ${lastA.z}`);
+        console.log(chalk.red(`Rover B Ending Positon: `) + `${lastB.x} ${lastB.y} ${lastB.z}`);
         endCLI();
     })  
 }
 
 function endCLI() {
-    console.log(chalk.red(`Rover A Ending Positon: `) + `${lastA.x} ${lastA.y} ${lastA.z}`);
-    console.log(chalk.red(`Rover B Ending Positon: `) + `${lastB.x} ${lastB.y} ${lastB.z}`);
+   
+    inquirer.prompt(questions.RESTART).then(({restart})=>{
+        if(!isValid.restartInput(restart)) {
+            consola.info('Error: please provide yes or no answer.');
+            return endCLI(); 
+        }
+        restart === 'yes' ? requestGridbounds() : consola.info('Thank you for using Mars Rover.')
+    })
 }
 
 //start prompt
