@@ -1,5 +1,13 @@
+interface Params {
+    x: number, 
+    y: number,
+    grindboundsX: number,
+    grindboundsY: number
+}
+
 module.exports = {
-    isInBounds: function (x: number, y: number, gbX: number, gbY: number){
-        return x >= 0 && x <= gbX && y >= 0 && y <= gbY? true : false
+    isInBounds: function (params: Params){
+        const {x,y,grindboundsX,grindboundsY} = params; 
+        return x >= 0 && x <= grindboundsX && y >= 0 && y <= grindboundsY? true : false
     }
 }
