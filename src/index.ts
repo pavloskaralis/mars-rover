@@ -194,14 +194,14 @@ function requestInstructionsB () {
         //store second output
         lastB = coordinatesB[coordinatesB.length - 1];
         //prompt final question
-        console.log(chalk.red(`Rover A Ending Positon: `) + `${lastA.x} ${lastA.y} ${lastA.z}`);
-        console.log(chalk.red(`Rover B Ending Positon: `) + `${lastB.x} ${lastB.y} ${lastB.z}`);
+        console.log(chalk.red('Rover A Ending Positon: ') + `${lastA.x} ${lastA.y} ${lastA.z}`);
+        console.log(chalk.red('Rover B Ending Positon: ') + `${lastB.x} ${lastB.y} ${lastB.z}`);
         endCLI();
     })  
 }
 
+//final question
 function endCLI() {
-   
     inquirer.prompt(questions.RESTART).then(({restart})=>{
         if(!isValid.restartInput(restart)) {
             consola.info('Error: please provide yes or no answer.');
@@ -214,7 +214,7 @@ function endCLI() {
 //start prompt
 clear();
 console.log(chalk.red(figlet.textSync('Mars Rover', { horizontalLayout: 'full' })))
-consola.info('Welcome to Mars Rover, a Typescript CLI to command 2 rovers on Mars.');
+consola.info('Welcome to Mars Rover, a TypeScript CLI to command 2 rovers on Mars.');
 requestGridbounds();
 
 
