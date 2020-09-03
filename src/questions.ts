@@ -1,5 +1,5 @@
 const GRIDBOUNDS = {
-    name: 'gridBounds',
+    name: 'gridbounds',
     type: 'input',
     message: 'Please provide exploration grid bounds (example: "5 5"):'
 }
