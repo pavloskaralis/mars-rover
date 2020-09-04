@@ -4,7 +4,7 @@ Mars Rover is a TypeScript CLI for instructing rovers on Mars.
 
 ## Installation
 
-Install node packages then start the strip.
+Install node packages then start the script.
 
 ```bash
 npm i
