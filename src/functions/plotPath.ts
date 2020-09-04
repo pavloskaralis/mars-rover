@@ -39,6 +39,10 @@ module.exports = {
             //if L or R determine new heading
             }  else {
                 currentZ = getNewZ(currentZ, splitInstructions[i]);
+                //if last command is a turn, update last coordinate
+                if(i === splitInstructions.length - 1){
+                    coordinates[coordinates.length - 1].z = currentZ;
+                }
             }
         }
 

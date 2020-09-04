@@ -3,13 +3,13 @@ var {plotPath} = require('./plotPath');
 describe('testing output size and values', () => {
     test('returns array of 1 coordinate', ()=> {
         const params = {
-            instructions: 'LLRLRRLR',
+            instructions: 'LL',
             startX: 1,
             startY: 1,
             startZ: 'N'
         }
         expect(plotPath(params)).toEqual([
-            {x: 1, y: 1, z: 'N'}
+            {x: 1, y: 1, z: 'S'}
         ]);
     });
     
@@ -25,10 +25,11 @@ describe('testing output size and values', () => {
             {x: 0, y: 1, z: 'W'},
             {x: 1, y: 1, z: 'E'},
             {x: 2, y: 1, z: 'E'},
-            {x: 2, y: 2, z: 'N'},
+            {x: 2, y: 2, z: 'S'},
         ]);
     });
 })
+
 
 describe('testing original input test values', () => {
     test('original input 1', ()=> {
