@@ -21,8 +21,8 @@ npm test [test name]
 
 ## Explanation
 
-* The grid brounds must be defined by two integers as the plateau is rectangular. 
+* The grid brounds must be defined by 2 integers as the plateau is rectangular. 
 * The starting position of a rover must exist within the grid bounds.
 * Instructing a rover off the grid will result in an error prompt. 
 * The 2nd rover cannot start along the 1st rover's path to avoid collision. 
-* The 2nd rover cannot be instructed to cross the 1st rover's end point. 
+* The 2nd rover git cannot be instructed to cross the 1st rover's end point. 
