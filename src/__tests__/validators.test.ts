@@ -57,6 +57,9 @@ describe('grid bounds input', () => {
         expect(isValid.gridboundsInput('5 3')).toBe(true);
     });
    
+    test('can contain 0 if not by itself', ()=> {
+        expect(isValid.gridboundsInput('05 30')).toBe(true);
+    });
 })
 
 describe('restart input', () => {

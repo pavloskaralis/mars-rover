@@ -6,7 +6,7 @@ module.exports = {
         return string.match(/^[LRM]+$/) ? true : false;
     },
     gridboundsInput: function (string: string) : boolean {
-        return string.match(/^[1-9]+\s[1-9]+$/) ? true : false;
+        return string.match(/^([1-9]+|[0-9]{2,})\s([1-9]+|[0-9]{2,})$/) ? true : false;
     },
     restartInput: function (string: string) : boolean {
         return string.match(/^((yes)|(no))$/) ? true : false;
