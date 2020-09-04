@@ -210,3 +210,5 @@ console.log(chalk.red(figlet.textSync('Mars Rover', { horizontalLayout: 'full' }
 consola.info('Welcome to Mars Rover, a TypeScript CLI for instructing rovers on Mars.');
 const driver = new Driver().startCLI(); 
 
+module.exports = Driver; 
+

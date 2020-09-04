@@ -26,3 +26,5 @@ npm test [test name]
 * Instructing a rover off the grid will result in an error prompt. 
 * The 2nd rover cannot start along the 1st rover's path to avoid collision. 
 * The 2nd rover git cannot be instructed to cross the 1st rover's end point. 
+* Class method chaining was implemented to create async input flow.
+* Recursion was implemented for async response to input errors. 
