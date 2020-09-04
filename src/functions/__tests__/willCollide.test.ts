@@ -1,4 +1,4 @@
-var {willCollide} = require('./willCollide');
+var {willCollide} = require('../willCollide');
 
 test('returns true when coordinate blocks path', ()=> {
     const params = {

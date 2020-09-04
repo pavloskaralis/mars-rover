@@ -1,4 +1,4 @@
-var {plotPath} = require('./plotPath');
+var {plotPath} = require('../plotPath');
 
 describe('testing output size and values', () => {
     test('returns array of 1 coordinate', ()=> {

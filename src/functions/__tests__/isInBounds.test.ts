@@ -1,4 +1,4 @@
-var {isInBounds} = require('./isInBounds');
+var {isInBounds} = require('../isInBounds');
 
 describe('testing grid bound min', () => {
     test('returns false when x is less than 0', ()=> {

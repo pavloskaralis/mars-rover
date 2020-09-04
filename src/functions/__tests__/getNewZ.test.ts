@@ -1,4 +1,4 @@
-var {getNewZ} = require('./getNewZ');
+var {getNewZ} = require('../getNewZ');
 
 describe('current heading as N', () => {
     test('returns new heading of W when turning left', ()=> {

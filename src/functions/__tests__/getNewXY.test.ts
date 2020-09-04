@@ -1,4 +1,4 @@
-var {getNewXY} = require('./getNewXY');
+var {getNewXY} = require('../getNewXY');
 
 
 describe('x coordinate change', () => {
